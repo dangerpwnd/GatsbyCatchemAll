@@ -36,6 +36,7 @@ const Pokecard = () => {
                 border: "1px solid black",
                 display: "grid",
                 margin: "1rem 2rem",
+                padding: "1rem",
                 gridTemplateColumns: "1fr 1fr",
               }}
               key={i}
@@ -45,8 +46,12 @@ const Pokecard = () => {
                 <img src={pokemon.sprites.large} alt={pokemon.name} />
               </div>
               <div>
-                <p>HP: {pokemon.hp}</p>
-                <p>Type: {pokemon.type}</p>
+                <h3>HP: {pokemon.hp}</h3>
+                <p>Attack: {pokemon.attack}</p>
+                <p>Defense: {pokemon.defense}</p>
+                <p>Sp Attack: {pokemon.sp_atk}</p>
+                <p>Sp Defense: {pokemon.sp_def}</p>
+                <p>Speed: {pokemon.speed}</p>
               </div>
             </div>
           );
