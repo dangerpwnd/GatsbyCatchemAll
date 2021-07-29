@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Gatsby CatchEm All",
+    title: "Gatsby-CatchEm-All",
   },
-  plugins: ["gatsby-plugin-emotion"],
+  plugins: [
+    "gatsby-plugin-emotion",
+    {
+      resolve: "gatsby-source-poke",
+    },
+  ],
 };

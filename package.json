@@ -2,8 +2,8 @@
   "name": "gatsby-catch-em-all",
   "version": "1.0.0",
   "private": true,
-  "description": "Gatsby CatchEm All",
-  "author": "Dangerpwnd",
+  "description": "Gatsby-CatchEm-All",
+  "author": "dangerpwnd",
   "keywords": [
     "gatsby"
   ],
@@ -19,6 +19,8 @@
     "@emotion/styled": "^11.3.0",
     "gatsby": "^3.10.2",
     "gatsby-plugin-emotion": "^6.10.0",
+    "gatsby-source-poke": "^1.0.1",
+    "prettier": "^2.3.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
