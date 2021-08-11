@@ -1,6 +1,7 @@
 import React from "react";
 import { jsx } from "@emotion/react";
 import { StaticQuery, graphql } from "gatsby";
+import NoImage from "../images/nope.jpg";
 
 const Pokecard = () => {
   return (
@@ -43,7 +44,11 @@ const Pokecard = () => {
             >
               <div>
                 <h2>{pokemon.name}</h2>
-                <img src={pokemon.sprites.large} alt={pokemon.name} />
+                {pokemon.sprites.large
+                  ? <img src={pokemon.sprites.large} alt={pokemon.name} />
+                  : <img src={NoImage} style={{height: "302px", width: "360px"}} alt="The image is not available" />
+                }
+                
               </div>
               <div>
                 <h3>HP: {pokemon.hp}</h3>
